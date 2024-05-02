@@ -1,0 +1,83 @@
+.wrapper {
+  padding: 48px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  @media screen and (max-width: 992px) {
+    gap: 16px;
+    padding: 36px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 8px;
+    padding: 22px 0;
+  }
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  min-width: 150px;
+
+  font-size: var(--size-countdown);
+  font-weight: var(--weight-medium);
+  color: var(--color-yellow);
+  line-height: normal;
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    font-size: var(--size-xxl);
+    min-width: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: var(--size-xl);
+    min-width: 86px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: var(--size-large);
+    min-width: 68px;
+  }
+}
+
+.label {
+  font-size: var(--size-big);
+  font-weight: var(--weight-normal);
+  color: var(--color-yellow);
+  line-height: normal;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: var(--size-button);
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: var(--size-xs);
+  }
+}
+
+.dots {
+  height: 100%;
+
+  @media screen and (max-width: 992px) {
+    height: 68px !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 48px !important;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 36px !important;
+  }
+}
