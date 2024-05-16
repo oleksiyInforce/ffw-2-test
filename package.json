@@ -4,11 +4,17 @@
   "proxy": "https://us22.api.mailchimp.com/",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
     "@hookform/resolvers": "^3.3.4",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@testing-library/dom": "^10.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": ">=16",
     "axios": "^1.6.8",
     "framer-motion": "^11.1.7",
     "lottie-react": "^2.4.0",
@@ -19,6 +25,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "sass": "^1.75.0",
+    "typescript": ">= 2.7",
     "web-vitals": "^2.1.0",
     "yup": "^1.4.0"
   },
@@ -47,7 +54,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "9.1.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "7.34.1",

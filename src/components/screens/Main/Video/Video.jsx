@@ -6,13 +6,16 @@ import { Container } from 'components/ui/Container/Container';
 import { useStep } from 'components/global/Provider/Provider';
 
 import styles from './Video.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const videoUrl = new URL('/public/REVUELTO_teaser02.mp4', import.meta.url).href;
 
 export const Video = () => {
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
-  const { setStep, isMuted } = useStep();
+  const { isMuted } = useStep();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => {
@@ -31,7 +34,7 @@ export const Video = () => {
   }, []);
 
   const handleVideoEnd = () => {
-    setStep('form');
+    navigate('/subscribe');
   };
 
   return (

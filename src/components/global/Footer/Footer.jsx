@@ -8,8 +8,8 @@ export const Footer = () => {
     <footer className={styles.wrapper}>
       <Paragraph>Copyright © 2024 Automobili Lamborghini S.p.A</Paragraph>
       <div className={styles.right}>
-        <Paragraph link={'/'}>Terms and Conditions</Paragraph>
-        <Paragraph link={'/'}>Privacy Policy</Paragraph>
+        <Paragraph link={'/terms-of-use'}>Terms and Conditions</Paragraph>
+        <Paragraph link={'/privacy-policy'}>Privacy Policy</Paragraph>
       </div>
     </footer>
   );
