@@ -49,14 +49,15 @@
 }
 
 .title {
-  font-family: var(--font-condensed);
-  font-size: var(--size-xxl);
-  font-weight: var(--weight-medium);
-  line-height: 1;
-  color: var(--color-white);
+  color: #FFF;
   text-align: center;
-
+  font-family: "Lambotype Cnd";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 66.667% */
   text-transform: uppercase;
+
 
   margin-bottom: 14px;
 
@@ -71,14 +72,15 @@
 }
 
 .sub {
-  font-family: var(--font-condensed);
-  font-size: var(--size-xl);
-  line-height: 48px;
-  font-weight: var(--weight-bold);
-  color: var(--color-white);
+  color: #FFF;
   text-align: center;
-
+  font-family: "Lambotype Cnd";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 96px; /* 100% */
   text-transform: uppercase;
+
 
   @media screen and (max-width: 1440px) {
     font-size: var(--size-xl);

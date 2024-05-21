@@ -22,7 +22,7 @@ export const Hero = () => {
       <div className={styles.logoWrapper}>
         <Icon name={'lambo'} width={116} />
       </div>
-      <h1 className={styles.title}>Wen Lambo</h1>
+      <h1 className={styles.title}>Wen Lambo?</h1>
       <h2 className={styles.sub}>...Now</h2>
       <motion.div variants={countdownVariants} initial='hidden' animate='visible'>
         <Countdown dueDate={date} />

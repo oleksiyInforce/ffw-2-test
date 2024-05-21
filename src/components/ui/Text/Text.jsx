@@ -11,6 +11,7 @@ export const Paragraph = ({
   children,
   className,
   onClick,
+    ...rest
 }) => {
   const handleClick = () => {
     if (onClick) {
@@ -20,6 +21,7 @@ export const Paragraph = ({
 
   return !link ? (
     <p
+        {...rest}
       className={`${styles[weight]} ${styles[size]} ${styles[color]} ${className}`}
       onClick={handleClick}
     >
@@ -28,6 +30,7 @@ export const Paragraph = ({
   ) : (
     <Link
       to={link}
+      {...rest}
       className={`${styles[weight]} ${styles[size]} ${styles[color]} ${styles.link} ${className}`}
       style={{
         cursor: 'pointer',
