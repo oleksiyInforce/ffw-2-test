@@ -63,8 +63,8 @@ export const Form = ({ setStep }) => {
         <Input placeholder={'enter your name'} {...register('name')} error={errors['name']} />
         <Input placeholder={'enter your email'} {...register('email')} error={errors['email']} />
         <Checkbox {...register('tos')} error={errors['tos']}>
-          I accept the Terms & Conditions. For more details please review our{' '}
-          <a href='/'>Privacy policy</a> .
+          I accept the <a href="/terms-of-use" target={"_blank"}>Terms & Conditions.</a> For more details please review our{' '}
+          <a href='/privacy-policy' target={"_blank"}>Privacy policy</a> .
         </Checkbox>
         <div className={styles.buttons}>
           <Button variant='secondary' href={'/'} mw={200}>
